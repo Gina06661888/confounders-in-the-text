@@ -6,6 +6,7 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+plt.rcParams["svg.fonttype"] = "none"  # Keep labels editable and searchable.
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -20,13 +21,13 @@ def main():
     plt.rcParams.update({"font.size": 11, "pdf.fonttype": 42, "axes.spines.top": False, "axes.spines.right": False})
     fig, ax = plt.subplots(figsize=(8, 5))
     x = np.arange(len(rows)); width = 0.32
-    for values, offset, label, color in [(raw, -width/2, "Raw embedding (H)", "#8798AA"), (adjusted, width/2, "Adjustment representation (Z)", "#167D9A")]:
+    for values, offset, label, color in [(raw, -width/2, "Raw embedding (H)", "#8798AA"), (adjusted, width/2, "Adjustment Z", "#167D9A")]:
         bars = ax.bar(x+offset, values, width, label=label, color=color)
         ax.bar_label(bars, labels=[f"{v:.3f}" for v in values], padding=5)
     ax.set_xticks(x, labels)
     ax.set_ylabel("Out-of-fold treatment prediction R²")
     ax.set_ylim(0, 0.65)
-    ax.set_title("Treatment predictability before and after adjustment", pad=16)
+    ax.set_title("Treatment predictability from raw embeddings and adjustment representations", pad=16)
     ax.legend(frameon=False)
     ax.set_axisbelow(True); ax.grid(axis="y", alpha=0.18)
     fig.text(0.5, 0.025, "Company-disjoint cross-fitting; 56,345 reports from 8,094 firms.\nReduced predictability alone does not establish more accurate causal estimates.", ha="center", va="bottom", fontsize=9, color="#555555")

@@ -24,10 +24,6 @@ Y = 1.0 T + C + 0.5 M + 0.3 W + error_Y
 
 Independent errors have standard deviation 1. Confounding strengths are 0.15, 0.60, and 1.20 with gamma_L = 1, plus a boundary setting gamma_C = 1.20 and gamma_L = 0. Each setting has 50 replications with paired samples/noise across settings. Simulation representations use the same architecture with a smaller common budget: two folds, 20 epochs, and 60 RF trees. The true effect is in synthetic units, not empirical ROA units. Oracle controls are included as references. This is not the fully synthetic quick-start demo.
 
-## Industry exploration
-
-Three rotating, company-disjoint roles separate representation/nuisance training, effect-learner training, and evaluation. The additional RF effect learner minimizes weighted residual loss using pseudo-responses and squared treatment-residual weights. Predicted effect features include observed controls and year/industry indicators. Industry summaries are report-weighted; a separate company-weighted summary is also produced. The 10th–90th and 25th–75th percentile ranges describe predictions, not confidence intervals. Industry support thresholds are prespecified in the notebook. This is a weighted RF R-learner, not a causal-forest implementation.
-
 ## Reproduction boundary
 
 The review adaptation changes labels, path configuration, and checkpoint namespaces. It does not promise bitwise equality across GPU builds. Full neural training has not been rerun in the packaging environment; complete input-to-paper verification remains pending. Upstream extraction, embedding, and financial alignment integration is not complete.

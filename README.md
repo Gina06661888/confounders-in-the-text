@@ -7,11 +7,11 @@ This project studies text-based adjustment for the relationship between competit
 
 ## Current release status
 
-This repository contains five anonymized research notebooks for the three-encoder benchmarks, semi-synthetic simulation, and industry analysis; a fully synthetic CPU estimator demonstration; verified aggregate full-sample results; and a runnable Figure 2 plotting script. The research notebooks require the existing authorized analysis sample and completed report embedding exports. Upstream extraction, embedding computation, SEC/financial linking, and analysis-sample construction are **not yet integrated**. Full neural training has not been rerun after packaging. This is a partial replication package.
+This repository contains four anonymized research notebooks for the three-encoder benchmarks and semi-synthetic simulation; a fully synthetic CPU estimator demonstration; verified aggregate full-sample results; and runnable plotting scripts for Figures 1–3. The research notebooks require the existing authorized analysis sample and completed report embedding exports. Upstream extraction, embedding computation, SEC/financial linking, and analysis-sample construction are **not yet integrated**. Full neural training has not been rerun after packaging. This is a partial replication package.
 
 The unrestricted analysis sample contains 56,345 reports from 8,094 companies. The extraction corpus contains 106,877 accepted reports. These are different populations.
 
-## Quick start: reproduce Figure 2
+## Quick start: reproduce the proposal figures
 
 Python 3.10 or newer is recommended for this plotting-only example. From the repository root:
 
@@ -21,11 +21,13 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 # macOS/Linux alternative:
 # source .venv/bin/activate
-python -m pip install -r requirements-figures.txt
+python -m pip install -r requirements-demo.txt
+python scripts/plot_figure1.py
 python scripts/plot_figure2.py
+python scripts/plot_figure3.py
 ```
 
-The script reads the checked-in aggregate diagnostics and writes PNG, PDF, and SVG files to `outputs/figures/`. It does not train models or require financial data, an API key, or a GPU.
+The scripts draw the workflow and read the frozen aggregate diagnostics/simulation summary, writing PNG, PDF, and SVG files to `outputs/figures/`. They do not train models or require financial data, an API key, or a GPU.
 
 ## Repository contents
 
@@ -56,7 +58,7 @@ The example generates artificial data and compares observed-control adjustment w
 4. Match SEC metadata using CIK and accession number.
 5. Match financial periods, construct ROA and controls, and align representations by report identifier.
 6. Fit company-grouped cross-fitted benchmarks and examine representation and influence diagnostics.
-7. Evaluate known-effect recovery in semi-synthetic simulations and explore industry variation.
+7. Evaluate known-effect recovery in semi-synthetic simulations. Industry variation is a development extension.
 
 ## Interpretation
 
@@ -65,3 +67,13 @@ Competition language is the share of retained Item 1 sentences satisfying the di
 ## Anonymous review and licensing
 
 Files in this package omit author names and institutional identifiers. The hosting account and Git commit metadata are separate from artifact anonymity. No code license or citation authorship is asserted in this initial version; a license and named citation will be added when approved by the authors.
+
+## Proposal figures
+
+![Figure 1. Workflow](figures/Figure1_Workflow.svg)
+
+![Figure 2. Treatment predictability](figures/Figure2_Treatment_Predictability.svg)
+
+![Figure 3. Semi-synthetic simulation](figures/Figure3_Simulation.svg)
+
+See [proposal alignment](docs/PROPOSAL_ALIGNMENT.md) for scope and labels. Industry development is preserved on the `development-industry-extension` branch.

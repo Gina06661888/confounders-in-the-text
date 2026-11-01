@@ -3,8 +3,8 @@
   "notebooks": [
     {
       "artifact": "notebooks/06a_Benchmarks_MiniLM.ipynb",
-      "sha256": "1b3f2d8e1f2f122af001b5073377a07837bd6fe0c3195050079457a3d2e47d50",
-      "code_identity": "f8d097cb8e2ae5f117e54f5a14dd2d19d770716a3407445e1d9e17f7f7f3cf1d",
+      "sha256": "1446bb94004f30d1e14775ae935870ae2c6f09a031366d17bcbede5b232b7a4b",
+      "code_identity": "eabcb1085da2b9878d30515dc313fac1275810148a51e9f10a2d6dc599610414",
       "adaptations": [
         "anonymous labels",
         "portable configuration",
@@ -13,8 +13,8 @@
     },
     {
       "artifact": "notebooks/06b_Benchmarks_Llama.ipynb",
-      "sha256": "afd7efc7e7e4e521f7ec16662ef5fb57b1e2e01bfca3fe7ae07576a4ae9ac258",
-      "code_identity": "4f1eee3a6138736d4327ae9e9e2e84bb5b36a94da4ba0df300c341ea5c7c1c71",
+      "sha256": "cdd2a6dd96244c2765955526bb64009a4dbcfc19f6578501c8ad97acd8059e88",
+      "code_identity": "5a30409c46082b6c87719bdb01feaeca848baded921371cd02e763fe20600a21",
       "adaptations": [
         "anonymous labels",
         "portable configuration",
@@ -23,8 +23,8 @@
     },
     {
       "artifact": "notebooks/06c_Benchmarks_OpenAI.ipynb",
-      "sha256": "0e0d839af6b593968c088aa041cc277f1d48dd2502dfbfc91e7c0356bf625f78",
-      "code_identity": "3a702529d524980c7ca6e294fe8dd2940fc79fb55c9856aa189a0eee03d433bc",
+      "sha256": "4dfdce38ee9e2fe4f32e8e6f91d764f8e889edd05506b7c9546b820e0be3acdc",
+      "code_identity": "ff95d8553e35d5a241141e01e1d4135c90b2f7c4a0986c3f7ce6967c95354f2a",
       "adaptations": [
         "anonymous labels",
         "portable configuration",
@@ -33,18 +33,8 @@
     },
     {
       "artifact": "notebooks/07_SemiSynthetic_Llama.ipynb",
-      "sha256": "fd4e3077f274a6cae561054e57679e2d27eae02109808f56041913bd47e30466",
-      "code_identity": "af623643af1652e38fb06d1798a62d0f361125237bb7e253ffc44a8ae8ffb47d",
-      "adaptations": [
-        "anonymous labels",
-        "portable configuration",
-        "new checkpoint namespace"
-      ]
-    },
-    {
-      "artifact": "notebooks/08_Industry_HTE_Llama_RF.ipynb",
-      "sha256": "fbd1131a0996358037bb463bd828120909242729ba431445da483e8383ef081a",
-      "code_identity": "e3e5b9b7140f43112039cee27d103bd697948b207611a77c4d7ce3996ea88b73",
+      "sha256": "6c43ddf9dfe59ceab6b483b9ced098ace285d85ed486dc973327cee04ceee631",
+      "code_identity": "59f7182802f747b236b3a76bc2cbefb0bc54f1ff764a05f95dfa7b86cb1448f1",
       "adaptations": [
         "anonymous labels",
         "portable configuration",

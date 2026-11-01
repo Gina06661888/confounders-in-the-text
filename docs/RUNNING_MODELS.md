@@ -33,9 +33,8 @@ python -m notebook
 | 06b_Benchmarks_Llama | Same benchmarks using Llama |
 | 06c_Benchmarks_OpenAI | Same benchmarks using already computed OpenAI vectors; no API calls |
 | 07_SemiSynthetic_Llama | Four scenarios x 50 replications, using real local inputs |
-| 08_Industry_HTE_Llama_RF | Three-role held-out industry exploration |
 
-Run each selected notebook top to bottom. Benchmarks default to 0%, 1%, and 5% current-asset exclusions. These are long-running model refits. Avoid simultaneous writers to the same model/run directory. Completed checkpoints are reused; incomplete neural folds or rotations restart. Packaging produces new run identities and does not reuse the original private run hashes.
+Run each selected notebook top to bottom. Benchmarks default to the proposal's unrestricted 0% sample. Set SENSITIVITY_PCTS=[0,1,5] for the planned sensitivity analyses. These are long-running model refits. Avoid simultaneous writers to the same model/run directory. Completed checkpoints are reused; incomplete neural folds or rotations restart. Packaging produces new run identities and does not reuse the original private run hashes.
 
 The additional MiniLM notebook uses the common snapshot-aligning implementation; the original unrestricted MiniLM run used its aligned reference matrix directly. Numerical agreement of the adapted pipeline with the published aggregates has not yet been verified end to end.
 
@@ -47,3 +46,5 @@ python scripts/run_synthetic_demo.py
 ```
 
 This generates entirely artificial observations and illustrates cross-fitting and residual estimation with observed vs oracle controls. It does not train the text encoder or validate adversarial adjustment and is not evidence for the paper's reported results.
+
+Industry exploration is a future direction in the current proposal. Its separately preserved implementation is on the `development-industry-extension` branch.
