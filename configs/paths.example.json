@@ -1,8 +1,13 @@
 {
   "data_root": "data",
-  "sec_metadata_dir": "data/sec_metadata",
-  "compustat_input": "data/restricted/compustat_annual.csv.zip",
+  "analysis_data_dir": "data/restricted/analysis_sample",
   "embedding_root": "data/embeddings",
   "output_root": "outputs",
-  "note": "Copy to paths.local.json and edit locally. The full pipeline will be integrated in a later revision."
+  "expected_corpus_id": "fa8fc124c14a1ca97e34",
+  "embedding_snapshots": {
+    "minilm": null,
+    "llama": null,
+    "openai": null
+  },
+  "note": "Copy to paths.local.json; use paths to your existing frozen analysis sample and model exports. Do not move or rename original input files."
 }

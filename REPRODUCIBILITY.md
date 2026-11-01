@@ -13,9 +13,11 @@
 | SEC linking | CIK and accession | Filing/report dates and match statuses | Pending integration |
 | Financial preparation | Authorized Compustat extract | ROA, controls, period audit | Pending integration |
 | Analysis alignment | Text, dates, financial periods, vector index | Company-report table and aligned matrix | Pending integration |
-| Benchmarks | Same analysis reports for each encoder | Eight specifications, out-of-fold predictions, diagnostics | Aggregate Table 1 included; training code pending |
-| Simulation | Real representations/characteristics and generated treatment/outcome | Known-effect recovery metrics | Pending integration |
-| Industry effects | Llama representation and financial/text sample | Held-out effect predictions and industry summaries | Pending integration |
+| Benchmarks | Same analysis reports for each encoder | Eight specifications, out-of-fold predictions, diagnostics | Three adapted notebooks included; requires local inputs |
+| Simulation | Real representations/characteristics and generated treatment/outcome | Known-effect recovery metrics | Adapted notebook included; requires local inputs |
+| Industry effects | Llama representation and financial/text sample | Held-out effect predictions and industry summaries | Adapted notebook included; requires local inputs |
+
+The five adapted notebooks have cleared outputs and use a local configuration instead of personal paths. Label/checkpoint renaming creates new run identities. Syntax and CPU estimator tests have passed; the adapted full neural pipelines have not been trained again in the packaging environment. See `docs/RUNNING_MODELS.md` and `docs/TECHNICAL_APPENDIX.md`.
 
 ## Population and units
 

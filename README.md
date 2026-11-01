@@ -7,7 +7,7 @@ This project studies text-based adjustment for the relationship between competit
 
 ## Current release status
 
-This initial repository contains documentation, transcription of verified aggregate full-sample results, and a runnable Figure 2 plotting script. The end-to-end extraction, financial matching, representation learning, simulation, and industry analysis programs have **not yet been integrated into this repository**. It is not yet a complete replication package.
+This repository contains five anonymized research notebooks for the three-encoder benchmarks, semi-synthetic simulation, and industry analysis; a fully synthetic CPU estimator demonstration; verified aggregate full-sample results; and a runnable Figure 2 plotting script. The research notebooks require the existing authorized analysis sample and completed report embedding exports. Upstream extraction, embedding computation, SEC/financial linking, and analysis-sample construction are **not yet integrated**. Full neural training has not been rerun after packaging. This is a partial replication package.
 
 The unrestricted analysis sample contains 56,345 reports from 8,094 companies. The extraction corpus contains 106,877 accepted reports. These are different populations.
 
@@ -18,7 +18,7 @@ Python 3.10 or newer is recommended for this plotting-only example. From the rep
 ```bash
 python -m venv .venv
 # Windows PowerShell:
-.venv\\Scripts\\Activate.ps1
+.venv\Scripts\Activate.ps1
 # macOS/Linux alternative:
 # source .venv/bin/activate
 python -m pip install -r requirements-figures.txt
@@ -34,6 +34,19 @@ The script reads the checked-in aggregate diagnostics and writes PNG, PDF, and S
 - [Reproduction plan](REPRODUCIBILITY.md): workflow, inputs, and current availability.
 - [Data access](DATA_AVAILABILITY.md): public-source and licensed-data dependencies.
 - [Configuration template](configs/paths.example.json): portable input/output paths.
+- [Run the research notebooks](docs/RUNNING_MODELS.md): local inputs, environment setup, and checkpoint behavior.
+- [Technical appendix](docs/TECHNICAL_APPENDIX.md): benchmark, simulation, and industry methods.
+- [Notebook manifest](docs/PACKAGE_MANIFEST.json): artifact checksums and adaptation scope.
+
+## Fully synthetic CPU example
+
+```bash
+python -m pip install -r requirements-demo.txt
+python scripts/run_synthetic_demo.py
+python -m unittest discover -s tests
+```
+
+The example generates artificial data and compares observed-control adjustment with oracle adjustment. It verifies residual-estimation plumbing; it is not a comparison of the learned text methods or a reproduction of the empirical findings.
 
 ## Analysis overview
 

@@ -1,0 +1,8 @@
+-r ../requirements-demo.txt
+joblib==1.4.2
+tqdm==4.67.1
+threadpoolctl==3.6.0
+ipython==8.37.0
+ipykernel==6.29.5
+notebook==7.4.0
+# Install the CPU/CUDA-appropriate PyTorch 2.7.1 build separately.

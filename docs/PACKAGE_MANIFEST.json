@@ -1,0 +1,56 @@
+{
+  "status": "partial_review_adaptation",
+  "notebooks": [
+    {
+      "artifact": "notebooks/06a_Benchmarks_MiniLM.ipynb",
+      "sha256": "1b3f2d8e1f2f122af001b5073377a07837bd6fe0c3195050079457a3d2e47d50",
+      "code_identity": "f8d097cb8e2ae5f117e54f5a14dd2d19d770716a3407445e1d9e17f7f7f3cf1d",
+      "adaptations": [
+        "anonymous labels",
+        "portable configuration",
+        "new checkpoint namespace"
+      ]
+    },
+    {
+      "artifact": "notebooks/06b_Benchmarks_Llama.ipynb",
+      "sha256": "afd7efc7e7e4e521f7ec16662ef5fb57b1e2e01bfca3fe7ae07576a4ae9ac258",
+      "code_identity": "4f1eee3a6138736d4327ae9e9e2e84bb5b36a94da4ba0df300c341ea5c7c1c71",
+      "adaptations": [
+        "anonymous labels",
+        "portable configuration",
+        "new checkpoint namespace"
+      ]
+    },
+    {
+      "artifact": "notebooks/06c_Benchmarks_OpenAI.ipynb",
+      "sha256": "0e0d839af6b593968c088aa041cc277f1d48dd2502dfbfc91e7c0356bf625f78",
+      "code_identity": "3a702529d524980c7ca6e294fe8dd2940fc79fb55c9856aa189a0eee03d433bc",
+      "adaptations": [
+        "anonymous labels",
+        "portable configuration",
+        "new checkpoint namespace"
+      ]
+    },
+    {
+      "artifact": "notebooks/07_SemiSynthetic_Llama.ipynb",
+      "sha256": "fd4e3077f274a6cae561054e57679e2d27eae02109808f56041913bd47e30466",
+      "code_identity": "af623643af1652e38fb06d1798a62d0f361125237bb7e253ffc44a8ae8ffb47d",
+      "adaptations": [
+        "anonymous labels",
+        "portable configuration",
+        "new checkpoint namespace"
+      ]
+    },
+    {
+      "artifact": "notebooks/08_Industry_HTE_Llama_RF.ipynb",
+      "sha256": "fbd1131a0996358037bb463bd828120909242729ba431445da483e8383ef081a",
+      "code_identity": "e3e5b9b7140f43112039cee27d103bd697948b207611a77c4d7ce3996ea88b73",
+      "adaptations": [
+        "anonymous labels",
+        "portable configuration",
+        "new checkpoint namespace"
+      ]
+    }
+  ],
+  "validation": "Static syntax, anonymity scan, and CPU component tests; full neural training not rerun."
+}
