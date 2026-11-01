@@ -1,0 +1,30 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+configs/paths.local.json
+*.pem
+*.key
+# Environments and notebook caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+# Local data and large generated artifacts
+data/raw/
+data/restricted/
+data/processed/
+cache/
+outputs/
+*.sqlite
+*.sqlite-*
+*.db
+*.npy
+*.npz
+*.pt
+*.pth
+*.joblib
+# Operating system files
+.DS_Store
+Thumbs.db
