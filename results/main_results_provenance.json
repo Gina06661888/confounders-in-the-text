@@ -1,0 +1,17 @@
+{
+  "source_type": "transcribed_from_supplied_completed_asset_sensitivity_comparisons",
+  "main_asset_exclusion_pct": 5,
+  "main_reports": 53527,
+  "main_companies": 7679,
+  "source_comparison_ids": {
+    "MiniLM": "comparison_a60d6cffe5884ca3",
+    "Llama": "comparison_e78d3603a1f62008",
+    "OpenAI": "comparison_4fa0514c7545692b"
+  },
+  "empirical_values_decimal_places": 4,
+  "probe_values_decimal_places": 6,
+  "historical_unrestricted_table_decimal_places": 2,
+  "simulation_changed": false,
+  "neural_training_rerun_for_this_update": false,
+  "filter_prespecified": false
+}

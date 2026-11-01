@@ -2,7 +2,7 @@
 
 ## What runs now
 
-`python scripts/plot_figure1.py`, `plot_figure2.py`, and `plot_figure3.py` reproduce the proposal workflow and aggregate diagnostic/simulation figures. The aggregate simulation CSV retains all evaluated methods and scenarios. `results/table1_full_sample.csv` transcribes the verified full-sample estimates. These files do not independently reproduce model estimation.
+`python scripts/plot_figure1.py`, `plot_figure2.py`, and `plot_figure3.py` reproduce the proposal workflow and aggregate diagnostic/simulation figures. The aggregate simulation CSV retains all evaluated methods and scenarios. `results/table1_asset_restricted.csv` transcribes the supplied 5%-restricted main estimates; `results/table1_full_sample.csv` preserves the earlier unrestricted estimates. `results/asset_sensitivity_adjustment.csv` compares Adjustment Z across 0%, 1%, and 5% restrictions. These files do not independently reproduce model estimation.
 
 ## Full workflow to integrate
 
@@ -21,11 +21,11 @@ The four adapted research notebooks have cleared outputs and use a local configu
 
 ## Population and units
 
-The unrestricted matched sample has 56,345 reports and 8,094 companies. Table 1 uses current ROA, log assets, leverage, cash holdings, fiscal-year indicators, and two-digit SIC indicators. Nuisance prediction models are ridge regression and random forest. Comparisons use observed controls only, raw text, a learned representation without adversarial training, and an adversarial adjustment representation.
+The unrestricted matched sample has 56,345 reports and 8,094 companies. The 1% restriction retains 55,781 reports and 8,015 companies; the 5% main restriction retains 53,527 reports and 7,679 companies. Thresholds use current assets across unrestricted report-period observations, not future ROA. Table 1 uses current ROA, log assets, leverage, cash holdings, fiscal-year indicators, and two-digit SIC indicators. Nuisance prediction models are ridge regression and random forest. Comparisons use observed controls only, raw text, a learned representation without adversarial training, and an adversarial adjustment representation.
 
 Treatment is measured in percentage points (100 times sentence share). Outcome ROA is in decimal units during estimation. Reported effects multiply the slope by 100, yielding ROA percentage points per one-percentage-point increase in competition language. Intervals use approximate company-clustered standard errors.
 
-Figure 2 reports held-out treatment prediction R-squared, from the raw representation or the adjustment representation alone. These probes are distinct from treatment nuisance prediction using representation plus observed controls.
+Figure 2 uses the 5% main sample and reports held-out treatment prediction R-squared, from the raw representation or the adjustment representation alone. These probes are distinct from treatment nuisance prediction using representation plus observed controls.
 
 ## Validation before a submission release
 

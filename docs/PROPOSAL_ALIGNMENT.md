@@ -2,7 +2,7 @@
 
 ## Scope
 
-The submission branch follows the supplied Stage 1 proposal: competition measurement; three text encoders; Table 1; treatment-predictability diagnostics (Figure 2); and four-scenario semi-synthetic evidence (Figure 3). Figure 1 presents the four-step workflow. Industry heterogeneity and 1%/5% asset restrictions are development directions. Completed industry-extension code is preserved on the `development-industry-extension` branch, outside this proposal package.
+The submission branch follows the supplied Stage 1 proposal: competition measurement; three text encoders; Table 1; treatment-predictability diagnostics (Figure 2); and four-scenario semi-synthetic evidence (Figure 3). Figure 1 presents the four-step workflow. The current main sample excludes the bottom 5% of report-period observations by current assets; completed unrestricted and 1% restrictions provide sensitivity comparisons. Industry heterogeneity remains a development extension. Completed industry-extension code is preserved on the `development-industry-extension` branch, outside this proposal package.
 
 ## Terminology
 
@@ -10,9 +10,9 @@ Use **Generative AI–Assisted Causal Inference**, **causal adjustment represent
 
 ## Result provenance
 
-Table 1 contains the verified 0% unrestricted-sample results for 56,345 reports and 8,094 companies. Figure 2 uses the six verified raw/adjusted treatment R-squared values. Figure 3 uses the supplied simulation summary: four scenarios, 50 replications, 1,000 evaluation companies, and true synthetic effect 1. All summary rows are retained. Its main plot displays the six methods described by the proposal; raw and oracle reference rows remain in the CSV.
+Table 1 now uses the supplied completed 5% results for 53,527 reports and 7,679 companies, stored in `results/table1_asset_restricted.csv`. The earlier 0% table remains unchanged in `results/table1_full_sample.csv`; `results/asset_sensitivity_adjustment.csv` preserves the three-population comparison. Figure 2 uses the corresponding 5% raw/adjusted treatment R-squared values (MiniLM 0.454216/0.191111; Llama 0.546029/0.196419; OpenAI 0.553073/0.171278). Its former unrestricted values are archived in `results/figure2_treatment_diagnostics_unrestricted.csv`. Figure 3 uses the supplied simulation summary: four scenarios, 50 replications, 1,000 evaluation companies, and true synthetic effect 1. All summary rows are retained. Its main plot displays the six methods described by the proposal; raw and oracle reference rows remain in the CSV.
 
-No new empirical performance claims are added. The supplied proposal explicitly discusses the simulation bias/coverage results and the similarity of the adversarial and non-adversarial representations. The corresponding values and computations are retained. A reduction in prediction R-squared comparing H and Z is not, by itself, an isolated test of the adversarial component; the NoAdv comparison supplies that ablation.
+This synchronization transcribes existing supplied results and redraws Figure 2; it does not rerun model training. The 5% sample was selected after diagnostics and sensitivity analyses, and is not described as prespecified. The sign change across samples remains explicit. The simulation was not recalibrated or rerun on the 5% empirical sample. The supplied proposal explicitly discusses the simulation bias/coverage results and the similarity of the adversarial and non-adversarial representations. The corresponding values and computations are retained. A reduction in prediction R-squared comparing H and Z is not, by itself, an isolated test of the adversarial component; the NoAdv comparison supplies that ablation.
 
 ## Future code changes
 

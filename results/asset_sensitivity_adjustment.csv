@@ -1,0 +1,19 @@
+encoder,specification,learner,effect_roa_pp_per_T_pp,ci_low_roa_pp,ci_high_roa_pp,reports,companies,asset_exclusion_pct
+MiniLM,Adjustment Z,Ridge,-27.7727,-77.9165,22.3711,56345,8094,0
+MiniLM,Adjustment Z,RF,-13.8025,-46.1695,18.5644,56345,8094,0
+MiniLM,Adjustment Z,Ridge,-1.6361,-4.9270,1.6548,55781,8015,1
+MiniLM,Adjustment Z,RF,-2.0537,-6.2583,2.1509,55781,8015,1
+MiniLM,Adjustment Z,Ridge,0.3802,0.1169,0.6436,53527,7679,5
+MiniLM,Adjustment Z,RF,0.2262,0.0651,0.3874,53527,7679,5
+Llama,Adjustment Z,Ridge,-26.6590,-78.7067,25.3887,56345,8094,0
+Llama,Adjustment Z,RF,-12.2786,-39.7628,15.2056,56345,8094,0
+Llama,Adjustment Z,Ridge,-0.9297,-3.2936,1.4343,55781,8015,1
+Llama,Adjustment Z,RF,-0.8907,-3.1963,1.4149,55781,8015,1
+Llama,Adjustment Z,Ridge,0.4147,0.2149,0.6145,53527,7679,5
+Llama,Adjustment Z,RF,0.1686,0.0255,0.3118,53527,7679,5
+OpenAI,Adjustment Z,Ridge,-31.2557,-82.4351,19.9238,56345,8094,0
+OpenAI,Adjustment Z,RF,-22.7674,-56.3466,10.8119,56345,8094,0
+OpenAI,Adjustment Z,Ridge,-0.1644,-1.6389,1.3102,55781,8015,1
+OpenAI,Adjustment Z,RF,-0.3801,-1.7139,0.9537,55781,8015,1
+OpenAI,Adjustment Z,Ridge,0.4219,0.1868,0.6570,53527,7679,5
+OpenAI,Adjustment Z,RF,0.2493,0.0963,0.4024,53527,7679,5

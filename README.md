@@ -7,9 +7,9 @@ This project studies text-based adjustment for the relationship between competit
 
 ## Current release status
 
-This repository contains four anonymized research notebooks for the three-encoder benchmarks and semi-synthetic simulation; a fully synthetic CPU estimator demonstration; verified aggregate full-sample results; and runnable plotting scripts for Figures 1–3. The research notebooks require the existing authorized analysis sample and completed report embedding exports. Upstream extraction, embedding computation, SEC/financial linking, and analysis-sample construction are **not yet integrated**. Full neural training has not been rerun after packaging. This is a partial replication package.
+This repository contains four anonymized research notebooks for the three-encoder benchmarks and semi-synthetic simulation; a fully synthetic CPU estimator demonstration; reported aggregate main-sample and unrestricted-sample results; and runnable plotting scripts for Figures 1–3. The research notebooks require the existing authorized analysis sample and completed report embedding exports. Upstream extraction, embedding computation, SEC/financial linking, and analysis-sample construction are **not yet integrated**. Full neural training has not been rerun after packaging. This is a partial replication package.
 
-The unrestricted analysis sample contains 56,345 reports from 8,094 companies. The extraction corpus contains 106,877 accepted reports. These are different populations.
+The unrestricted analysis sample contains 56,345 reports from 8,094 companies. The extraction corpus contains 106,877 accepted reports. These are different populations. The current main analysis excludes the bottom 5% of report-period observations by current total assets and contains 53,527 reports from 7,679 companies. The unrestricted and 1% exclusion analyses are sensitivity comparisons.
 
 ## Quick start: reproduce the proposal figures
 
@@ -31,7 +31,9 @@ The scripts draw the workflow and read the frozen aggregate diagnostics/simulati
 
 ## Repository contents
 
-- [Full-sample Table 1](results/table1_full_sample.csv): effect estimates and approximate confidence limits.
+- [Main Table 1](results/TABLE1.md) and [CSV](results/table1_asset_restricted.csv): 5%-restricted estimates and approximate confidence limits.
+- [Unrestricted estimates](results/table1_full_sample.csv): preserved earlier 0% results.
+- [Adjustment sensitivity comparison](results/asset_sensitivity_adjustment.csv): 0%, 1%, and 5% results.
 - [Figure 2 input](results/figure2_treatment_diagnostics.csv): out-of-fold treatment prediction diagnostics.
 - [Reproduction plan](REPRODUCIBILITY.md): workflow, inputs, and current availability.
 - [Data access](DATA_AVAILABILITY.md): public-source and licensed-data dependencies.
@@ -62,7 +64,7 @@ The example generates artificial data and compares observed-control adjustment w
 
 ## Interpretation
 
-Competition language is the share of retained Item 1 sentences satisfying the dictionary rules. It is not automatically a measure of an exogenous change in competitive conditions. Table 1 reports continuous-treatment slopes, not binary-treatment average effects. All displayed approximate 95% intervals include zero. Reduced treatment predictability alone does not establish valid confounder adjustment.
+Competition language is the share of retained Item 1 sentences satisfying the dictionary rules. It is not automatically a measure of an exogenous change in competitive conditions. Table 1 reports continuous-treatment slopes, not binary-treatment average effects. All six main-sample Adjustment Z approximate 95% intervals exclude zero and have positive point estimates. Unrestricted and 1% exclusion Adjustment Z estimates are negative and statistically inconclusive. Estimates are therefore sensitive to sample definition; significance does not establish greater causal accuracy. Reduced treatment predictability alone does not establish valid confounder adjustment.
 
 ## Anonymous review and licensing
 

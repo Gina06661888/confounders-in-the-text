@@ -34,7 +34,7 @@ python -m notebook
 | 06c_Benchmarks_OpenAI | Same benchmarks using already computed OpenAI vectors; no API calls |
 | 07_SemiSynthetic_Llama | Four scenarios x 50 replications, using real local inputs |
 
-Run each selected notebook top to bottom. Benchmarks default to the proposal's unrestricted 0% sample. Set SENSITIVITY_PCTS=[0,1,5] for the planned sensitivity analyses. These are long-running model refits. Avoid simultaneous writers to the same model/run directory. Completed checkpoints are reused; incomplete neural folds or rotations restart. Packaging produces new run identities and does not reuse the original private run hashes.
+Run each selected notebook top to bottom. Benchmarks default to the proposal's 5% current-asset restriction, SENSITIVITY_PCTS=[5]. Set SENSITIVITY_PCTS=[0,1,5] to rerun all completed sensitivity comparisons. The default change does not retrain models or verify agreement with saved aggregate results. These are long-running model refits. Avoid simultaneous writers to the same model/run directory. Completed checkpoints are reused; incomplete neural folds or rotations restart. Packaging produces new run identities and does not reuse the original private run hashes.
 
 The additional MiniLM notebook uses the common snapshot-aligning implementation; the original unrestricted MiniLM run used its aligned reference matrix directly. Numerical agreement of the adapted pipeline with the published aggregates has not yet been verified end to end.
 

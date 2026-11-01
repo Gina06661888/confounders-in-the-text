@@ -2,7 +2,7 @@
 
 ## Included in this initial package
 
-Only aggregate reported results needed for Table 1 and Figure 2 are included. No firm-level Compustat records or financial analysis tables are distributed here.
+Aggregate results for the 5%-restricted main Table 1, unrestricted estimates, Adjustment Z asset-sensitivity comparisons, Figure 2 diagnostics, and Figure 3 simulation summaries are included. No firm-level Compustat records or financial analysis tables are distributed here.
 
 ## SEC filings and metadata
 
@@ -12,7 +12,7 @@ The study uses Item 1 of 10-K filings organized by filing year 2010–2026. A fi
 
 Financial statements are obtained from Compustat North America through WRDS. Access requires the relevant institutional/vendor entitlement. Raw extracts and merged firm-level financial data are excluded pending confirmation of the applicable license. ROA and other derived financial fields are not assumed to be freely redistributable.
 
-The full replication package will include the query specification, variable list, filters, access dates, and construction programs so entitled users can reconstruct the financial inputs. Researchers without access will need a separately provided, fully synthetic demonstration dataset; it is not included in this initial package.
+The full replication package will include the query specification, variable list, filters, access dates, and construction programs so entitled users can reconstruct the financial inputs. Researchers without access can run `scripts/run_synthetic_demo.py`, which generates fully artificial observations locally. This CPU demonstration is distinct from the paper's semi-synthetic simulation and does not reproduce its empirical findings.
 
 ## Embedding models
 

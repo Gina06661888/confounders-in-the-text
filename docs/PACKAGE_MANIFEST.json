@@ -3,32 +3,35 @@
   "notebooks": [
     {
       "artifact": "notebooks/06a_Benchmarks_MiniLM.ipynb",
-      "sha256": "1446bb94004f30d1e14775ae935870ae2c6f09a031366d17bcbede5b232b7a4b",
-      "code_identity": "eabcb1085da2b9878d30515dc313fac1275810148a51e9f10a2d6dc599610414",
+      "sha256": "fff5bd48f2be7c1d5a86a448dc4b55f56db45ab858dc7908afb9726322cde1e7",
+      "code_identity": "9f6563882c32c6eb4222943015520c85b0c307ce84cc8ee058129a2df855604f",
       "adaptations": [
         "anonymous labels",
         "portable configuration",
-        "new checkpoint namespace"
+        "new checkpoint namespace",
+        "5% current-asset exclusion default; optional 0/1/5 sensitivity runs"
       ]
     },
     {
       "artifact": "notebooks/06b_Benchmarks_Llama.ipynb",
-      "sha256": "cdd2a6dd96244c2765955526bb64009a4dbcfc19f6578501c8ad97acd8059e88",
-      "code_identity": "5a30409c46082b6c87719bdb01feaeca848baded921371cd02e763fe20600a21",
+      "sha256": "4dc2da28f26954db0f3cd892a2f47aa8429fdfdd4b7058b23a8a16353cd6ac34",
+      "code_identity": "94332155218068232f49d056b6323a9624fbf07bf7d8de5c4950ef192c1d1998",
       "adaptations": [
         "anonymous labels",
         "portable configuration",
-        "new checkpoint namespace"
+        "new checkpoint namespace",
+        "5% current-asset exclusion default; optional 0/1/5 sensitivity runs"
       ]
     },
     {
       "artifact": "notebooks/06c_Benchmarks_OpenAI.ipynb",
-      "sha256": "4dfdce38ee9e2fe4f32e8e6f91d764f8e889edd05506b7c9546b820e0be3acdc",
-      "code_identity": "ff95d8553e35d5a241141e01e1d4135c90b2f7c4a0986c3f7ce6967c95354f2a",
+      "sha256": "b201b92eab03c417535b98ad620c2011cf4b548ed9b9f4e2466b4fbc7669d1df",
+      "code_identity": "65a707f33b20191a82ce340daa761b684cb27486c604c30b83acc939d68b0b85",
       "adaptations": [
         "anonymous labels",
         "portable configuration",
-        "new checkpoint namespace"
+        "new checkpoint namespace",
+        "5% current-asset exclusion default; optional 0/1/5 sensitivity runs"
       ]
     },
     {

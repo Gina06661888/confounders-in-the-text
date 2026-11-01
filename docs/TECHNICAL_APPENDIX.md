@@ -6,6 +6,14 @@ The treatment is 100 times the share of retained Item 1 sentences satisfying the
 
 The outcome is next-fiscal-year net income divided by mean beginning/end total assets. Financial controls are current ROA, log assets, debt/assets, and cash/assets, plus year and two-digit SIC indicators. Exact financial-period matching, authorized input construction, and historical identity review are separate upstream steps. Next-fiscal-year outcomes are not automatically wholly after the filing date.
 
+## Current main sample and sensitivity comparisons
+
+The unrestricted matched analysis contains 56,345 reports from 8,094 firms. Excluding observations below the first percentile of current total assets retains 55,781 reports and 8,015 firms; excluding observations below the fifth percentile retains 53,527 reports and 7,679 firms. The current proposal uses the 5% restriction as its main sample. Thresholds are calculated on the unrestricted report-period observations, using current log assets (a monotone ranking of assets), not future ROA. Restrictions were examined after small-denominator ROA diagnostics; they were not prespecified. Firms can contribute some retained and some excluded years.
+
+Main Table 1 is `results/table1_asset_restricted.csv`; the unrestricted table is retained in `results/table1_full_sample.csv`. The Adjustment Z 0/1/5 comparison is `results/asset_sensitivity_adjustment.csv`. The main estimates are positive with approximate intervals excluding zero, whereas unrestricted and 1% estimates are negative with intervals including zero. Population sensitivity prevents a general conclusion that competition language increases ROA across all firms.
+
+Figure 2 and `results/figure2_treatment_diagnostics.csv` now use the same 5% sample. The corresponding H/Z treatment-probe R-squared values are 0.454216/0.191111 (MiniLM), 0.546029/0.196419 (Llama), and 0.553073/0.171278 (OpenAI). These are representation-only probes, distinct from nuisance models that also include observed controls. The simulation design and results are unchanged by this empirical-sample update.
+
 ## Benchmarks
 
 Five outer folds keep companies together. Training-only scalers and inner company validation are used for the learned representation. The encoder has hidden layers 256 and 128 and outputs 64 coordinates. The outcome head has hidden layers 128 and 64; the treatment adversary has layers 64 and 32. The matched no-adversary comparator disables the adversarial objective. Settings include dropout 0.1, learning rate 0.001, weight decay 0.00001, up to 40 epochs, and patience 6 after at least 10 epochs.
