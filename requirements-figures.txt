@@ -1,0 +1,3 @@
+# Plotting-only environment; full training environment will be added separately.
+numpy==2.1.0
+matplotlib==3.9.2
