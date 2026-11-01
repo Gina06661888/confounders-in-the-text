@@ -1,35 +1,36 @@
-"""Draw the four-step proposal workflow; no model training or data access."""
+"""Export the supplied proposal Figure 1 without redrawing its content."""
 from pathlib import Path
 from io import BytesIO
+import base64
+import shutil
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-plt.rcParams["svg.fonttype"] = "none"  # Keep labels editable and searchable.
-from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
+import matplotlib.image as mpimg
 
 ROOT=Path(__file__).resolve().parents[1]
+SOURCE=ROOT/'figures/Figure1_Workflow.png'
 
 def main():
-    fig,ax=plt.subplots(figsize=(15.5,5.0))
-    ax.set_xlim(0,16);ax.set_ylim(0,5);ax.axis('off')
-    titles=['1  Data preparation','2  Embedding engine','3  Identification engine','4  Estimation engine']
-    bodies=[
-      'Extract and clean Item 1\n\nMeasure competition language T\n\nLink SEC dates and Compustat\n\nAlign one report-period row',
-      'Encode retained paragraphs\n\nMiniLM  |  Llama  |  OpenAI\n\nAverage paragraph vectors\nand L2 normalize\n\nReport representation H',
-      'Learn adjustment representation Z\n\nPredict outcome from Z, W, T\n\nAdversarial objective:\nreduce prediction of T from Z\n\nCompare with NoAdv',
-      'Company-disjoint cross-fitting\n\nRidge / random-forest nuisances\n\nResidual-on-residual regression\n\nEffect estimates and diagnostics',
-    ]
-    for i,(title,body) in enumerate(zip(titles,bodies)):
-        x=0.15+4*i
-        ax.add_patch(FancyBboxPatch((x,0.65),3.65,3.55,boxstyle='round,pad=0.03,rounding_size=0.10',facecolor='#F2F6F9',edgecolor='#25465E',linewidth=1.5))
-        ax.text(x+1.825,4.48,title,ha='center',va='center',fontsize=12,fontweight='bold',color='#17324D')
-        ax.text(x+1.825,2.42,body,ha='center',va='center',fontsize=10.5,linespacing=1.30)
-        if i<3:ax.add_patch(FancyArrowPatch((x+3.72,2.42),(x+3.98,2.42),arrowstyle='-|>',mutation_scale=16,color='#25465E',linewidth=1.5))
-    fig.text(0.5,0.02,'Figure 1. Workflow of Generative AI–Assisted Causal Inference',ha='center',fontsize=13,fontweight='bold')
-    out=ROOT/'outputs/figures';out.mkdir(parents=True,exist_ok=True)
-    for ext in ['png','pdf','svg']:
-        buf=BytesIO();fig.savefig(buf,format=ext,dpi=300,bbox_inches='tight',facecolor='white')
-        (out/f'Figure1_Workflow.{ext}').write_bytes(buf.getvalue())
-    plt.close(fig)
+    if not SOURCE.is_file():
+        raise FileNotFoundError(f'Proposal source image missing: {SOURCE}')
+    target=ROOT/'outputs/figures';target.mkdir(parents=True,exist_ok=True)
+    original=SOURCE.read_bytes()
+    image=mpimg.imread(BytesIO(original),format='png')
+    height,width=image.shape[:2]
+    # Retain the original image bytes; no labels or geometry are redrawn.
+    png=target/'Figure1_Workflow.png';shutil.copyfile(SOURCE,png)
+    payload=base64.b64encode(original).decode('ascii')
+    svg=(f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
+         f'width="{width}" height="{height}" viewBox="0 0 {width} {height}">'
+         f'<title>Figure 1 Workflow of Generative AI Assisted Causal Inference</title>'
+         f'<image width="{width}" height="{height}" xlink:href="data:image/png;base64,{payload}"/>'
+         '</svg>')
+    (target/'Figure1_Workflow.svg').write_text(svg,encoding='utf-8')
+    fig=plt.figure(figsize=(width/100,height/100),dpi=100)
+    ax=fig.add_axes([0,0,1,1]);ax.imshow(image);ax.axis('off')
+    buf=BytesIO();fig.savefig(buf,format='pdf',dpi=100,pad_inches=0)
+    (target/'Figure1_Workflow.pdf').write_bytes(buf.getvalue());plt.close(fig)
+    for extension in ('png','pdf','svg'):print('Saved:',target/f'Figure1_Workflow.{extension}')
 
 if __name__=='__main__':main()

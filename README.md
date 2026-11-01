@@ -72,7 +72,7 @@ Files in this package omit author names and institutional identifiers. The hosti
 
 ## Proposal figures
 
-![Figure 1. Workflow](figures/Figure1_Workflow.svg)
+![Figure 1. Workflow](figures/Figure1_Workflow.png)
 
 ![Figure 2. Treatment predictability](figures/Figure2_Treatment_Predictability.svg)
 
