@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "corpus_id": "fa8fc124c14a1ca97e34",
+  "dimension": 384,
+  "unique_vectors": 6120529,
+  "paragraph_ids": 10676560,
+  "reports_exported": 106877,
+  "reports_without_paragraphs": 0,
+  "report_matrix_sha256": "f590dc243f732f3a3076c51a28df9a6350eabb55a8e46daa363e6cb79a7d7023",
+  "report_index_sha256": "13fd6008abb042ba33b7182b8339cb5be0f95ee68c492c820c386417e3fc112b",
+  "paragraph_matrix": "paragraph_vectors.npy",
+  "paragraph_dtype": "float16",
+  "paragraph_index": "paragraph_index_c3cd192fca42.csv.gz",
+  "report_matrix": "report_vectors_c3cd192fca42.npy",
+  "report_index": "../report_index.csv",
+  "report_dtype": "float32",
+  "report_pooling": "equal weight per paragraph ID, then L2 normalize",
+  "settings": {
+    "engine": "paragraph_three_encoders_v1",
+    "corpus_id": "fa8fc124c14a1ca97e34",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "dimension": 384,
+    "sequence_length": 256,
+    "pooling": "attention-mask mean per chunk; L2 chunks; payload-token weighted mean; L2 paragraph",
+    "chunking": "nonoverlapping token IDs; no truncation; repeat passage prefix per llama chunk",
+    "storage": "float16",
+    "device": "cuda",
+    "compute_dtype": "torch.float16",
+    "versions": {
+      "numpy": "2.1.0",
+      "torch": "2.7.1+cu118",
+      "transformers": "5.19.0"
+    }
+  },
+  "note": "embedding_row is zero-based; join by doc_id or paragraph_id, never by CSV order across models.",
+  "distribution_note": "Personal corpus_database path removed; source_path removed from index. Matrix bytes and matrix checksum unchanged. Matrices distributed separately."
+}

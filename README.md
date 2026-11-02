@@ -11,6 +11,10 @@ This repository contains four anonymized research notebooks for the three-encode
 
 The unrestricted analysis sample contains 56,345 reports from 8,094 companies. The extraction corpus contains 106,877 accepted reports. These are different populations. The current main analysis excludes the bottom 5% of report-period observations by current total assets and contains 53,527 reports from 7,679 companies. The unrestricted and 1% exclusion analyses are sensitivity comparisons.
 
+## Report embedding inputs
+
+The three precomputed report-vector matrices and anonymous index have been prepared in an external archive. **The download link currently requires existing access; public access is pending the owner’s Dropbox link setting.** See [embedding downloads and validation](docs/EMBEDDING_DOWNLOADS.md) for file names, checksums and configuration. The archive excludes financial records, and does not by itself reproduce the financial analysis.
+
 ## Quick start: reproduce the proposal figures
 
 Python 3.10 or newer is recommended for this plotting-only example. From the repository root:

@@ -20,7 +20,7 @@ The full replication package will include the query specification, variable list
 - Llama-based: `nvidia/llama-nemotron-embed-1b-v2`.
 - OpenAI: `text-embedding-3-small`.
 
-Model revisions, preprocessing, chunking, pooling, precision, and vector/index checksums must be recorded in the final package. OpenAI access requires an API key and may incur charges. Redistribution of model weights and derived embeddings will be reviewed against the applicable terms before release.
+Anonymous receipts now record the model revisions where available, chunking, pooling, precision and matrix/index checksums in `data/embedding_metadata/`. The report-vector archive and its current access status are documented in [embedding downloads](docs/EMBEDDING_DOWNLOADS.md). Creating new OpenAI embeddings requires an API key and may incur charges; reading the precomputed vectors does not. Model weights and paragraph vectors are not bundled. No general redistribution license for third-party source data or model weights is asserted.
 
 ## Simulations
 

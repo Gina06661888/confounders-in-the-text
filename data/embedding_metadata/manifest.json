@@ -1,0 +1,36 @@
+{
+  "status": "embedding_distribution_manifest",
+  "reports": 106877,
+  "corpus_id": "fa8fc124c14a1ca97e34",
+  "index_sha256": "13fd6008abb042ba33b7182b8339cb5be0f95ee68c492c820c386417e3fc112b",
+  "source_index_sha256": "753d300cccacd8557dd860d9329b8fe7ed52ec8b3235cddb50d88accc4707ffe",
+  "sanitization": "Removed source_path column only; identifiers, row assignments, counts and competition measures unchanged.",
+  "models": {
+    "minilm": {
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "dimension": 384,
+      "matrix": "minilm/report_vectors_c3cd192fca42.npy",
+      "matrix_sha256": "f590dc243f732f3a3076c51a28df9a6350eabb55a8e46daa363e6cb79a7d7023",
+      "matrix_size_bytes": 164163200,
+      "snapshot": "minilm/latest_snapshot.json"
+    },
+    "llama": {
+      "model": "nvidia/llama-nemotron-embed-1b-v2",
+      "dimension": 512,
+      "matrix": "llama/report_vectors_af6b69086662.npy",
+      "matrix_sha256": "7adc199b46ba74a6e21374a15c8713cce5fbc30d0dd29e7c59142d6d5088f972",
+      "matrix_size_bytes": 218884224,
+      "snapshot": "llama/latest_snapshot.json"
+    },
+    "openai": {
+      "model": "text-embedding-3-small",
+      "dimension": 512,
+      "matrix": "openai/report_vectors_6d97282a499e.npy",
+      "matrix_sha256": "47c7a1a4b120a168cb81bb381d29475d5885d671e0d23b170b3158e17f2d570e",
+      "matrix_size_bytes": 218884224,
+      "snapshot": "openai/latest_snapshot.json"
+    }
+  },
+  "matrix_verification": "Original matrix SHA256 values declared in completed source-run receipts; verify downloaded bytes independently.",
+  "financial_data_included": false
+}

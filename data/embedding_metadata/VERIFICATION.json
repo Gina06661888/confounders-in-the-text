@@ -1,0 +1,23 @@
+{
+  "verification_scope": "Downloaded copied matrices and anonymous index; no model training or financial data verification",
+  "reports": 106877,
+  "index_sha256_verified": "13fd6008abb042ba33b7182b8339cb5be0f95ee68c492c820c386417e3fc112b",
+  "matrix_sha256_verified": {
+    "minilm": "f590dc243f732f3a3076c51a28df9a6350eabb55a8e46daa363e6cb79a7d7023",
+    "llama": "7adc199b46ba74a6e21374a15c8713cce5fbc30d0dd29e7c59142d6d5088f972",
+    "openai": "47c7a1a4b120a168cb81bb381d29475d5885d671e0d23b170b3158e17f2d570e"
+  },
+  "checks_passed": [
+    "unique_doc_id",
+    "complete_zero_based_embedding_rows",
+    "corpus_id",
+    "matrix_size",
+    "matrix_shape",
+    "float32_dtype",
+    "finite_values",
+    "matrix_sha256",
+    "index_sha256",
+    "receipt_index_alignment"
+  ],
+  "public_link_access_verified": false
+}
