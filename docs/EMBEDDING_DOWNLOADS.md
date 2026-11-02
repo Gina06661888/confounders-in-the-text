@@ -4,7 +4,7 @@
 
 [Report embedding archive](https://www.dropbox.com/scl/fo/q124t6ty6jc7hhv7yv5te/AGuSuXWJ6tzK4TIF-qTp-8U?rlkey=dvrrshgw5x286ei0rrw8ujnl9&dl=0)
 
-The three matrices, anonymous report index and model receipts have been staged in this archive. **Public link access is not yet enabled.** The current link is view-only, permits downloads, and is restricted to people with existing access. It must not be described as a publicly accessible download until the owner changes the link audience in Dropbox and access is checked without an authorized session.
+The archive contains the three matrices, anonymous report index and model receipts. Dropbox shared-link metadata confirms public (anyone-with-link), view-only access with downloads allowed. This confirms the link settings; an independent unauthenticated download test has not been performed.
 
 No company-level financial records, credentials, raw text archives, checkpoint databases or paragraph vector matrices are included.
 
@@ -28,7 +28,7 @@ The files in `data/embedding_metadata/` duplicate the small anonymous receipts a
 
 ## Download and validate
 
-1. Once link access is enabled, download the entire archive and extract it while preserving the `minilm`, `llama`, and `openai` subfolders.
+1. Download the entire archive and extract it while preserving the `minilm`, `llama`, and `openai` subfolders.
 2. Install NumPy in the environment used for validation.
 3. From the repository root, run:
 
