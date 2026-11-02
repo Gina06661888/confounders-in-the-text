@@ -19,5 +19,10 @@
     "index_sha256",
     "receipt_index_alignment"
   ],
-  "public_link_access_verified": false
+  "public_link_access_verified": false,
+  "public_link_settings_verified": true,
+  "public_link_audience": "public",
+  "public_link_access_level": "view",
+  "public_link_downloads_allowed": true,
+  "public_link_verification_method": "Dropbox shared-link metadata; independent unauthenticated download not tested"
 }
