@@ -80,8 +80,8 @@ Files in this package omit author names and institutional identifiers. The hosti
 
 ![Figure 1. Workflow](figures/Figure1_Workflow.png)
 
-![Figure 2. Treatment predictability](figures/Figure2_Treatment_Predictability.svg)
+![Figure 2. Treatment predictability](figures/Figure2_Treatment_Predictability.png)
 
-![Figure 3. Semi-synthetic simulation](figures/Figure3_Simulation.svg)
+![Figure 3. Semi-synthetic simulation](figures/Figure3_Simulation.png)
 
 See [proposal alignment](docs/PROPOSAL_ALIGNMENT.md) for scope and labels. Industry development is preserved on the `development-industry-extension` branch.
