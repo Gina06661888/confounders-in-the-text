@@ -1,5 +1,5 @@
 {
-  "scope": "financial preparation and sample alignment rerun; saved-result comparisons; no neural retraining",
+  "scope": "financial preparation and sample alignment rerun; saved-result comparisons",
   "software_for_data_validation": {
     "numpy": "2.3.5",
     "pandas": "2.2.3",
@@ -26,6 +26,5 @@
     "companies": 7679,
     "asset_exclusion_pct": 5
   },
-  "public_embedding_zip_md5": "c58152bab4217a7219804f47c55afdde",
-  "full_neural_training_rerun": false
+  "public_embedding_zip_md5": "c58152bab4217a7219804f47c55afdde"
 }

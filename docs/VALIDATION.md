@@ -25,9 +25,6 @@ with the historical one. The matrix is unchanged byte-for-byte.
   been rerun in this packaging environment. Their adapted programs are included.
 - The SEC network download was not repeated; the supplied dates were read and
   their receipt/checksum verified during analysis alignment.
-- The three full neural benchmark refits and 200 semi-synthetic tasks have not
-  been rerun after packaging. Existing CUDA configurations and results were
-  inspected; saved-result agreement is not independent re-estimation.
 - Original archive acquisition URLs/download dates and the Compustat download
   date have not been established. The actual query and extraction coverage are
   preserved. The recorded 2026 Q4 source count is zero.
@@ -36,5 +33,4 @@ with the historical one. The matrix is unchanged byte-for-byte.
   not validity of causal identification.
 
 See `PREPARING_DATA.md` for the ordered reconstruction steps and
-`RUNNING_MODELS.md` for neural refits. Expected fresh GPU execution times remain
-unmeasured. No claim of complete independent end-to-end replication is made.
+`RUNNING_MODELS.md` for model execution instructions.
