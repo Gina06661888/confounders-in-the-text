@@ -2,9 +2,9 @@
 
 ## Archive and current access status
 
-[Report embedding archive](https://www.dropbox.com/scl/fo/q124t6ty6jc7hhv7yv5te/AGuSuXWJ6tzK4TIF-qTp-8U?rlkey=dvrrshgw5x286ei0rrw8ujnl9&dl=0)
+[Report embedding archive on Zenodo](https://zenodo.org/records/23990178)
 
-The archive contains the three matrices, anonymous report index and model receipts. Dropbox shared-link metadata confirms public (anyone-with-link), view-only access with downloads allowed. This confirms the link settings; an independent unauthenticated download test has not been performed.
+The Zenodo record provides `embeddings.zip`, containing the three matrices, anonymous report index, manifest and model receipts. The record lists the creator as Anonymous and is publicly accessible without sign-in. On 2026-11-08, the record and unauthenticated file access were checked; the README, report index, manifest and three snapshot files were read from the hosted ZIP. The index SHA256 matched the manifest. This access check did not independently re-verify all three numerical matrix checksums from the Zenodo copy; run the verification script below after downloading.
 
 No company-level financial records, credentials, raw text archives, checkpoint databases or paragraph vector matrices are included.
 
@@ -28,7 +28,7 @@ The files in `data/embedding_metadata/` duplicate the small anonymous receipts a
 
 ## Download and validate
 
-1. Download the entire archive and extract it while preserving the `minilm`, `llama`, and `openai` subfolders.
+1. Open the Zenodo record, download `embeddings.zip`, and extract it while preserving the `minilm`, `llama`, and `openai` subfolders inside `embeddings/`. Point the verification script and local configuration to that extracted `embeddings/` directory, not its parent.
 2. Install NumPy in the environment used for validation.
 3. From the repository root, run:
 

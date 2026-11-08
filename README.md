@@ -13,7 +13,7 @@ The unrestricted analysis sample contains 56,345 reports from 8,094 companies. T
 
 ## Report embedding inputs
 
-The three precomputed report-vector matrices and anonymous index are available in an external archive. Dropbox link settings are confirmed as anyone-with-link, view-only, with downloads allowed. See [embedding downloads and validation](docs/EMBEDDING_DOWNLOADS.md) for file names, checksums and configuration. The archive excludes financial records, and does not by itself reproduce the financial analysis.
+The three precomputed report-vector matrices, anonymous report index, manifest and model receipts are available in the [Zenodo review-data archive](https://zenodo.org/records/23990178). The record lists the creator as Anonymous and provides public access to `embeddings.zip` without sign-in. See [embedding downloads and validation](docs/EMBEDDING_DOWNLOADS.md) for file names, checksums and configuration. The archive excludes financial records, and does not by itself reproduce the financial analysis.
 
 ## Quick start: reproduce the proposal figures
 
