@@ -1,0 +1,16 @@
+{
+  "source_project_root": "data/restricted/source_project",
+  "output_root": "outputs/preparation",
+  "raw_filings_dir": null,
+  "extraction_dir": null,
+  "compustat_source": null,
+  "financial_run_dir": null,
+  "sec_run_dir": null,
+  "embedding_root": null,
+  "minilm_snapshot": null,
+  "extraction_output_root": null,
+  "financial_output_root": null,
+  "sec_output_root": null,
+  "embedding_output_root": null,
+  "analysis_output_root": null
+}

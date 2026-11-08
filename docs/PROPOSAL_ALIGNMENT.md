@@ -18,4 +18,4 @@ This synchronization transcribes existing supplied results and redraws Figure 2;
 
 For each model update: identify changed scripts and settings; rerun affected analyses; regenerate the tables/figures from the same output snapshot; record data/model/code identities; compare the outputs with the proposal; then create a new submission version. A label-only plotting edit does not require model retraining. Changes to estimation, filtering, seeds, or model settings do require rerunning affected results. Historical results are not overwritten or represented as newly estimated results.
 
-The full upstream replication pipeline remains under integration. Public financial-data redistribution is not assumed.
+Upstream programs are now included, with stage-level verification recorded in `VALIDATION.md`. Complete raw-to-neural replication remains unverified. Public financial-data redistribution is not assumed.

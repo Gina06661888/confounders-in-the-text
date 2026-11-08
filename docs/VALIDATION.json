@@ -1,0 +1,31 @@
+{
+  "scope": "financial preparation and sample alignment rerun; saved-result comparisons; no neural retraining",
+  "software_for_data_validation": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "financial_panel": {
+    "rows": 212875,
+    "columns": 81,
+    "matches_original": true,
+    "numeric_tolerance": 1e-12
+  },
+  "analysis_sample": {
+    "reports": 56345,
+    "companies": 8094,
+    "shared_columns": 75,
+    "matches_original": true,
+    "removed_personal_column": "source_path",
+    "numeric_tolerance": 1e-12,
+    "aligned_minilm_sha256": "cb048f53eebf55d51dc0f13bc3bd849a444e0cf50b827612262285ea32af40b8"
+  },
+  "main_sample": {
+    "reports": 53527,
+    "companies": 7679,
+    "asset_exclusion_pct": 5
+  },
+  "public_embedding_zip_md5": "c58152bab4217a7219804f47c55afdde",
+  "full_neural_training_rerun": false
+}

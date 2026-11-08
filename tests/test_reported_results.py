@@ -53,7 +53,7 @@ class ReportedResultTests(unittest.TestCase):
             p=ROOT/rec['artifact'];nb=json.loads(p.read_text())
             self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),rec['sha256'])
             for c in nb['cells']:
-                if c['cell_type']=='code':ast.parse(c['source']);self.assertFalse(c.get('outputs'))
+                if c['cell_type']=='code':ast.parse(''.join(c['source']));self.assertFalse(c.get('outputs'))
             if p.name.startswith('06'):
                 source='\n'.join(c['source'] for c in nb['cells'] if c['cell_type']=='code')
                 self.assertIn('SENSITIVITY_PCTS=[5]',source)

@@ -1,5 +1,5 @@
 {
-  "status": "partial_review_adaptation",
+  "status": "upstream_integrated_partial_execution_validation",
   "notebooks": [
     {
       "artifact": "notebooks/06a_Benchmarks_MiniLM.ipynb",
@@ -43,7 +43,70 @@
         "portable configuration",
         "new checkpoint namespace"
       ]
+    },
+    {
+      "artifact": "notebooks/01_Extract_Competition.ipynb",
+      "sha256": "e3da12fbe1b09c610cd30aa927faa2186f61242c81f0f08070645463127cf37a",
+      "adaptations": [
+        "portable local configuration",
+        "cleared outputs and personal paths",
+        "original stage implementation"
+      ]
+    },
+    {
+      "artifact": "notebooks/02_Prepare_Financials.ipynb",
+      "sha256": "013d64adf5062252f1d3a8d0e20a629a26cec3ff1753a73a8b00859b1b105995",
+      "adaptations": [
+        "portable local configuration",
+        "cleared outputs and personal paths",
+        "original stage implementation"
+      ]
+    },
+    {
+      "artifact": "notebooks/03_SEC_Filing_Dates.ipynb",
+      "sha256": "1913eb1e4962bfb2cf720e39fbb2565fd70a4ff0f3b204aa511e800f16347e52",
+      "adaptations": [
+        "portable local configuration",
+        "cleared outputs and personal paths",
+        "original stage implementation"
+      ]
+    },
+    {
+      "artifact": "notebooks/04a_Encode_MiniLM.ipynb",
+      "sha256": "fa4b501b9559e41ce3dd68c213d8f0235c55f154ee6445ee9cadaa6f73f7269f",
+      "adaptations": [
+        "portable local configuration",
+        "cleared outputs and personal paths",
+        "original stage implementation"
+      ]
+    },
+    {
+      "artifact": "notebooks/04b_Encode_OpenAI.ipynb",
+      "sha256": "c75a1576f2130e19dbb915429c3c6072f9ddf6d24959a315b2ba7b4a06da2b90",
+      "adaptations": [
+        "portable local configuration",
+        "cleared outputs and personal paths",
+        "original stage implementation"
+      ]
+    },
+    {
+      "artifact": "notebooks/04c_Encode_Llama.ipynb",
+      "sha256": "d3461336efdc5bf8d12b9b5de3982bc1bf281a9616343feb902919d87a8540e1",
+      "adaptations": [
+        "portable local configuration",
+        "cleared outputs and personal paths",
+        "original stage implementation"
+      ]
+    },
+    {
+      "artifact": "notebooks/05_Build_Analysis_Sample.ipynb",
+      "sha256": "30313f40d52dc814365b6ff4e4b38e57e467bbdad170ffc0679ff1731e900e88",
+      "adaptations": [
+        "portable local configuration",
+        "cleared outputs and personal paths",
+        "original stage implementation"
+      ]
     }
   ],
-  "validation": "Static syntax, anonymity scan, and CPU component tests; full neural training not rerun."
+  "validation": "Financial preparation and analysis alignment rerun; original aggregates compared; all public embedding bytes verified; neural refits and raw extraction not rerun. See docs/VALIDATION.md."
 }

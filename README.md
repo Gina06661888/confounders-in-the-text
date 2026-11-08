@@ -7,7 +7,7 @@ This project studies text-based adjustment for the relationship between competit
 
 ## Current release status
 
-This repository contains four anonymized research notebooks for the three-encoder benchmarks and semi-synthetic simulation; a fully synthetic CPU estimator demonstration; reported aggregate main-sample and unrestricted-sample results; and runnable plotting scripts for Figures 1–3. The research notebooks require the existing authorized analysis sample and completed report embedding exports. Upstream extraction, embedding computation, SEC/financial linking, and analysis-sample construction are **not yet integrated**. Full neural training has not been rerun after packaging. This is a partial replication package.
+This repository includes portable notebooks for extraction and competition measurement, financial preparation, SEC metadata alignment, three embedding encoders, analysis-sample construction, benchmarks and semi-synthetic simulation. It also includes a fully synthetic CPU estimator demonstration, reported aggregate results, and plotting scripts for Figures 1–3. Financial inputs require authorized local access. Upstream code is now included; complete raw-to-neural replication has not been independently verified. See [preparing data](docs/PREPARING_DATA.md) and [validation status](docs/VALIDATION.md) for completed checks and remaining limitations.
 
 The unrestricted analysis sample contains 56,345 reports from 8,094 companies. The extraction corpus contains 106,877 accepted reports. These are different populations. The current main analysis excludes the bottom 5% of report-period observations by current total assets and contains 53,527 reports from 7,679 companies. The unrestricted and 1% exclusion analyses are sensitivity comparisons.
 
@@ -42,6 +42,8 @@ The scripts draw the workflow and read the frozen aggregate diagnostics/simulati
 - [Reproduction plan](REPRODUCIBILITY.md): workflow, inputs, and current availability.
 - [Data access](DATA_AVAILABILITY.md): public-source and licensed-data dependencies.
 - [Configuration template](configs/paths.example.json): portable input/output paths.
+- [Prepare the input data](docs/PREPARING_DATA.md): original upstream programs, SQL query, local configuration and run order.
+- [Validation status](docs/VALIDATION.md): measured checks and remaining work.
 - [Run the research notebooks](docs/RUNNING_MODELS.md): local inputs, environment setup, and checkpoint behavior.
 - [Technical appendix](docs/TECHNICAL_APPENDIX.md): benchmark, simulation, and industry methods.
 - [Notebook manifest](docs/PACKAGE_MANIFEST.json): artifact checksums and adaptation scope.

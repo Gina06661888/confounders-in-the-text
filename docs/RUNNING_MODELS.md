@@ -5,7 +5,7 @@
 1. A frozen authorized analysis sample folder containing `dataset_snapshot.json`, its CSV table, and its aligned reference matrix. Preserve their original filenames and checksums; notebooks follow the receipt.
 2. Completed report-level embedding exports for the same corpus, each with `latest_snapshot.json`, its matrix and index, and matching SHA256 checksums. The notebooks join by `doc_id` and stop on missing vectors or text-measure mismatch.
 
-These inputs are not included in the repository. Their upstream construction programs will be integrated separately. Do not substitute different financial samples without recording a new snapshot.
+These inputs are not included in the repository. The upstream construction programs and execution order are included in [preparing data](PREPARING_DATA.md). Do not substitute different financial samples without recording a new snapshot.
 
 ## Setup
 

@@ -1,0 +1,47 @@
+{
+  "adaptations": [
+    {
+      "path": "notebooks/01_Extract_Competition.ipynb",
+      "sha256": "e3da12fbe1b09c610cd30aa927faa2186f61242c81f0f08070645463127cf37a",
+      "scope": "Item 1 extraction and competition measurement",
+      "outputs_cleared": true
+    },
+    {
+      "path": "notebooks/02_Prepare_Financials.ipynb",
+      "sha256": "013d64adf5062252f1d3a8d0e20a629a26cec3ff1753a73a8b00859b1b105995",
+      "scope": "Financial controls and next-period ROA",
+      "outputs_cleared": true
+    },
+    {
+      "path": "notebooks/03_SEC_Filing_Dates.ipynb",
+      "sha256": "1913eb1e4962bfb2cf720e39fbb2565fd70a4ff0f3b204aa511e800f16347e52",
+      "scope": "SEC dates and report metadata alignment",
+      "outputs_cleared": true
+    },
+    {
+      "path": "notebooks/04a_Encode_MiniLM.ipynb",
+      "sha256": "fa4b501b9559e41ce3dd68c213d8f0235c55f154ee6445ee9cadaa6f73f7269f",
+      "scope": "Paragraph and report encoding: MiniLM",
+      "outputs_cleared": true
+    },
+    {
+      "path": "notebooks/04b_Encode_OpenAI.ipynb",
+      "sha256": "c75a1576f2130e19dbb915429c3c6072f9ddf6d24959a315b2ba7b4a06da2b90",
+      "scope": "Paragraph and report encoding: OpenAI",
+      "outputs_cleared": true
+    },
+    {
+      "path": "notebooks/04c_Encode_Llama.ipynb",
+      "sha256": "d3461336efdc5bf8d12b9b5de3982bc1bf281a9616343feb902919d87a8540e1",
+      "scope": "Paragraph and report encoding: Llama",
+      "outputs_cleared": true
+    },
+    {
+      "path": "notebooks/05_Build_Analysis_Sample.ipynb",
+      "sha256": "30313f40d52dc814365b6ff4e4b38e57e467bbdad170ffc0679ff1731e900e88",
+      "scope": "Frozen financial/text analysis table and aligned MiniLM matrix",
+      "outputs_cleared": true
+    }
+  ],
+  "full_neural_rerun": false
+}

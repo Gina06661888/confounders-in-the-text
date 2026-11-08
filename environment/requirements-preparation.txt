@@ -1,0 +1,14 @@
+# Supporting dependencies, not a validated single environment for every stage.
+-r requirements-models.txt
+requests>=2.31,<3
+filelock>=3.13,<4
+transformers>=4.44,<6
+huggingface_hub>=0.28
+safetensors>=0.4
+openai>=1.50,<3
+tiktoken>=0.7
+lxml>=5.3,<6
+ftfy==6.3.1
+spacy>=3.7,<4
+vaderSentiment==3.3.2
+openpyxl==3.1.5

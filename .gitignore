@@ -3,6 +3,7 @@
 .env.*
 !.env.example
 configs/paths.local.json
+configs/preparation.local.json
 *.pem
 *.key
 # Environments and notebook caches

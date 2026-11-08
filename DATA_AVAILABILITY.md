@@ -6,13 +6,13 @@ Aggregate results for the 5%-restricted main Table 1, unrestricted estimates, Ad
 
 ## SEC filings and metadata
 
-The study uses Item 1 of 10-K filings organized by filing year 2010–2026. A filing-year folder is not the same as the financial year. SEC metadata linking uses CIK and accession number. A later package will document source URLs, the input inventory, extraction rules, and download snapshots. Public accessibility does not by itself establish redistribution rights for every original document or third-party source archive.
+The study uses Item 1 of 10-K filings organized by filing year 2010–2026. A filing-year folder is not the same as the financial year. SEC metadata linking uses CIK and accession number. Extraction and metadata-linking code are included in notebooks 01 and 03; the frozen source coverage and remaining inventory limitations are documented in `docs/PREPARING_DATA.md`. The original archive acquisition URL and download dates have not yet been independently established. Public accessibility does not by itself establish redistribution rights for every original document or third-party source archive.
 
 ## Compustat
 
 Financial statements are obtained from Compustat North America through WRDS. Access requires the relevant institutional/vendor entitlement. Raw extracts and merged firm-level financial data are excluded pending confirmation of the applicable license. ROA and other derived financial fields are not assumed to be freely redistributable.
 
-The full replication package will include the query specification, variable list, filters, access dates, and construction programs so entitled users can reconstruct the financial inputs. Researchers without access can run `scripts/run_synthetic_demo.py`, which generates fully artificial observations locally. This CPU demonstration is distinct from the paper's semi-synthetic simulation and does not reproduce its empirical findings.
+The supplied SQL query, selected variables, filters, and financial construction programs are included in `data/queries/compustat_funda.sql` and notebook 02. The original query download date still needs confirmation; a new extract may differ because the database updates. Researchers without access can run `scripts/run_synthetic_demo.py`, which generates fully artificial observations locally. This CPU demonstration is distinct from the paper's semi-synthetic simulation and does not reproduce its empirical findings.
 
 ## Embedding models
 
